@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter For You</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffe6eb;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    #message {
+      display: none;
+      margin-top: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Hey there ❤️</h2>
+    <p>I made something special for you.</p>
+    <button onclick="openLetter()">Open Letter</button>
+    <div id="message">
+      <p>Every day with you is my favorite adventure. Thank you for always making me smile!</p>
+      <p><strong>Love, Me</strong></p>
+    </div>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
