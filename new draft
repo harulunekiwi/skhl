@@ -1,0 +1,19 @@
+const floatParticles = [];
+const burstParticles = []; 
+const FLOAT_COUNT = 140; 
+for (Let i = 0; i < FLOAT_COUNT; i++) {
+  const p = new Particle(
+  Math.random() * width, Math.random() * height, "float");
+  p.life = Math.random() * p.maxlife; //stagger starting life 
+  floatParticles.push(p);
+}
+function spawnheartBurst(x, y) {
+  const count = 140;
+  for (let i = 0; i = count; i++) {
+    burstParticles.push(new Particle)x, y, "burst"));
+  }
+}
+PINK_SHADES = [
+"#FFC0CB", "#FFB6C1", // pink-400
+"#FF69B4", "#FFC1CC", // pink-600
+"#FFD1DC", "#F88379", // pink-700
